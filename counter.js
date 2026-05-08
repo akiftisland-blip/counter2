@@ -1,4 +1,4 @@
-const counter = () => {
+(() => {
     const $counter = document.getElementById("js-counter");
     
     
@@ -11,8 +11,9 @@ const counter = () => {
             $counter.textContent = currentCount - 1;
         }
     }
-    for (let index = 0; index < document.getElementsByClassName("js-button").length; index++){
-        ducument.getElementsByClassName("js-button")[index].
+    for (let index = 0; index < document.getElementsByClassName("js-counter").length; index++){
+        document.getElementsByClassName("js-counter")[index].
         addEventListener("click", (e) => clickHandler(e))
     }
-}
+})();
+
